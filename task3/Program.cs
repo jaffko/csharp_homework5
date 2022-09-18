@@ -25,8 +25,8 @@ int[] maxMinIndex(double[] array)
     }
     for (int i = 2; i < array.Length; i++)
     {
-        if (array[i] > result[1]) result[1] = i;
-        else if (array[i] < result[0]) result[0] = i;
+        if (array[i] > array[result[1]]) result[1] = i;
+        else if (array[i] < array[result[0]]) result[0] = i;
     }
     return result;
 }
